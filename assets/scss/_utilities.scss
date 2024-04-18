@@ -44,3 +44,66 @@
         color: $custom-white;
     }
 }
+
+.contact-form{
+    min-width: 300px;
+    min-height: 400px;
+    border: 2px solid $custom-light-grey;
+    border-radius: 20px;
+    margin-left: $left-std-margin-small;
+    margin-right: $right-std-margin-small;
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    &-info-container{
+        width: 80%;
+        display: flex;
+        flex-flow: column nowrap;
+        input{
+            padding: 5px;
+            min-height: 35px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid $custom-light-grey;
+            background-color: $custom-white;
+        }
+        input:focus{
+            border: 1px solid $custom-light-green;
+            box-shadow: 5px 5px 5px $custom-light-green;
+        }
+        input:first-of-type{
+            margin-top: 20px;
+        }
+    }
+    &-msg{
+        background-color: $custom-white;
+        width: 80%;
+        min-height: 200px;
+        margin-bottom: 20px;
+        color: $custom-dark-green;
+        font-size: 1.0em;
+        padding: 5px;
+    }
+    &-sub{
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid $custom-light-grey;
+        background-color: $custom-white;
+        text-align: center;
+        padding: 5px;
+        font-size: large;
+        font-weight: bold;
+        color: $custom-green;
+        transition: background-color $transition-time-std, color $transition-time-std, height $transition-time-std, width $transition-time-std;
+    }
+    &-sub:hover{
+        cursor: pointer;
+        background-color: $custom-light-green;
+        color: $custom-dark-green;
+        height: 43px;
+        width: 123px;
+    }
+}

@@ -22,11 +22,11 @@ header{
     align-items: center;
     padding: 0px 15px;
     a{
-        width: 30px;
-        height: 30px;
+        height: 50px;
+        padding: 5px;
     }  
     img{
-        height: 90%;
+        height: 50px;
     }
 }
 
@@ -40,6 +40,12 @@ h2{
     font-size: 1.5em;
     margin: 20px $left-std-margin-small;
     color: $custom-light-green;
+}
+
+.special-heading-text{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 p{
@@ -97,4 +103,40 @@ p{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start
+}
+
+.portfolio{
+    padding: 0px 10px;
+    &-container{
+        margin-left: $left-std-margin-small;
+        margin-right: $right-std-margin-small;
+        min-width: 400px;
+        min-height: 250px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $custom-light-grey;
+        box-shadow: 5px 5px 10px $custom-light-grey;
+        border-radius: 20px;
+        color: $custom-white;
+    }
+}
+
+.contact{
+    padding: 0px 10px;
+}
+
+.social-container{
+    margin-left: $left-std-margin-small;
+    margin-top: 10px;
+    img{
+        height: 50px;
+        margin-right: $right-std-margin-small;
+        opacity: .7;
+        transition: opacity $transition-time-std;
+    }
+    img:hover{
+        opacity: 1;
+    }
 }
