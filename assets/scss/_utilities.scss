@@ -1,0 +1,46 @@
+.go-to-btn{
+    background-color: $custom-green;
+    width: 160px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width $transition-time-std, height $transition-time-std, background-color $transition-time-std;
+    a{
+        font-size: small;
+        font-weight: bold;
+        color: $custom-white;
+        transition: color $transition-time-std;
+    }
+}
+
+.go-to-btn:hover{
+    background-color: $custom-light-green;
+    width: 163px;
+    height: 33px;
+    a{
+        color: $custom-dark-green;
+    }
+}
+
+.milestone-box{
+    background-color: $custom-green;
+    height: 150px;
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5px;
+    &-title{
+        font-size: 1.7em;
+    }
+    &-text{
+        margin: 20px 0px;
+        font-size: 1.0em;
+        font-weight: bold;
+        color: $custom-white;
+    }
+}

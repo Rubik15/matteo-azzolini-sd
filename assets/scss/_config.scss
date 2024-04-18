@@ -1,0 +1,29 @@
+//COLOR PALETTE STACK
+
+$custom-dark-green: #00120B;
+$custom-green: #35605A;
+$custom-light-green: #31E981;
+$custom-light-grey: #6B818C;
+$custom-white: #D8E4FF;
+
+//FONT STACK SECTION
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+$font-stack: 'Mukta', sans-serif;
+
+//DOCUMENT STRUCTURE
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+$left-std-margin-small: 20px;
+$left-std-margin-big: 300px;
+
+
+//ANIMATIONS
+
+$transition-time-std: .2s;
