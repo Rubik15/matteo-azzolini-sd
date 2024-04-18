@@ -10,6 +10,9 @@ body{
         color: $custom-light-green;
         font-style: normal;
     }
+    ul{
+        list-style: none;
+    }
 }
 
 header{
@@ -21,13 +24,68 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 15px;
+    .menu{
+        li{
+            display: inline;
+            margin-right: 10px;
+        }
+        li:last-of-type{
+            margin-right: 0;
+        }
+    }
+
+    .dropdown{
+        span{
+            z-index: 2;
+            position: relative;  /* This is important! */
+            cursor: pointer;
+        }
+    }
+
+    .features-menu {
+        display: flex;
+        flex-direction: column;
+        background: $custom-light-grey;
+        border-radius: 5px;
+        padding-top: 60px;
+
+        position: absolute;      /* Add these */
+        top: 0px;
+        right: 10px;
+        z-index: 1;
+
+        display: none;
+    }
+
+    .dropdown:hover{
+        .features-menu{
+            display: flex;
+        }
+    }
+
+      
+    .features-menu li {
+        list-style: none;
+        border-bottom: 1px solid $custom-white;
+      
+        padding: 0 40px 10px 20px;
+        margin: 10px;
+    }
+      
+    .features-menu li:last-of-type {
+        border-bottom: none;
+    }
+
     a{
         height: 50px;
         padding: 5px;
+        text-decoration: none;
+        color: $custom-white;
     }  
     img{
         height: 50px;
     }
+    
 }
 
 .page-title{
@@ -110,7 +168,7 @@ p{
     &-container{
         margin-left: $left-std-margin-small;
         margin-right: $right-std-margin-small;
-        min-width: 400px;
+        min-width: 300px;
         min-height: 250px;
         display: flex;
         flex-flow: row nowrap;
