@@ -47,10 +47,10 @@ header{
         flex-direction: column;
         background: $custom-light-grey;
         border-radius: 5px;
-        padding-top: 60px;
+        padding-top: 50px;
 
         position: absolute;      /* Add these */
-        top: 0px;
+        top: 5px;
         right: 10px;
         z-index: 1;
 
@@ -68,7 +68,7 @@ header{
         list-style: none;
         border-bottom: 1px solid $custom-white;
       
-        padding: 0 40px 10px 20px;
+        padding: 0 30px 5px 10px;
         margin: 10px;
     }
       
@@ -83,7 +83,10 @@ header{
         color: $custom-white;
     }  
     img{
-        height: 50px;
+        height: 40px;
+    }
+    .logo-img{
+        height: 60px;
     }
     
 }
@@ -189,7 +192,7 @@ p{
     margin-left: $left-std-margin-small;
     margin-top: 10px;
     img{
-        height: 50px;
+        height: 40px;
         margin-right: $right-std-margin-small;
         opacity: .7;
         transition: opacity $transition-time-std;
