@@ -239,14 +239,21 @@ p{
     margin-left: $left-std-margin-small;
     margin-top: 20px;
     margin-bottom: 20px;
+    h3{
+        color: $custom-light-green;
+    }
+    .not-good{
+        color: red;
+    }
     img{
         height: 50px;
         width: 60px;
+        margin-right: $left-std-margin-small;
     }
     ul{
         list-style:outside;
+        max-width: 240px;
         margin-left: $left-std-margin-small;
-        margin-right: $right-std-margin-small;
     }
     li{
         color: $custom-white;
