@@ -1,6 +1,7 @@
 @import 'config';
 @import 'utilities';
 
+//GENERAL AND HEADING
 body{
     background-color: $custom-dark-green;
     a{
@@ -103,12 +104,6 @@ h2{
     color: $custom-light-green;
 }
 
-.special-heading-text{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
-
 p{
     font-size: 1.2em;
     color: $custom-white;
@@ -116,6 +111,13 @@ p{
     max-width: 400px;
     margin: auto $left-std-margin-small;
 }
+
+.special-heading-text{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
 
 .res-btn-sec{
     display: flex;
@@ -136,6 +138,8 @@ p{
     }
 }
 
+//TECHOLOGY SECTION
+
 .technologies{
     display: flex;
     flex-flow: row wrap;
@@ -151,9 +155,19 @@ p{
     }
 }
 
+//ABOUT SECTION
+
 .about{
     padding: 0px 10px;
+
+    h3{
+        margin-left: $left-std-margin-small;
+        margin-right: $right-std-margin-small;
+        font-size: 1.1em; 
+    }
 }
+
+//MILESTONES SECTION
 
 .milestones{
     padding: 0px 10px;
@@ -165,6 +179,8 @@ p{
     flex-flow: row wrap;
     justify-content: flex-start
 }
+
+//PORTFOLIO SECTION
 
 .portfolio{
     padding: 0px 10px;
@@ -184,6 +200,8 @@ p{
     }
 }
 
+//CONTACT SECTION
+
 .contact{
     padding: 0px 10px;
 }
@@ -199,5 +217,117 @@ p{
     }
     img:hover{
         opacity: 1;
+    }
+}
+
+
+
+
+//+++++++++++++++++++++++++++++++++++++--------DESKTOP VIEW FROM HERE-----------------+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media  (min-width: 700px) {
+    
+    .page-title{
+        font-size: 2em;
+        margin: 10px $left-std-margin-small;
+        color: $custom-white;
+    }
+
+    h2{
+        font-size: 1.7em;
+        margin: 20px $left-std-margin-big;
+        color: $custom-light-green;
+    }
+
+    p{
+        font-size: 1.5em;
+        color: $custom-white;
+        line-height: 1.3em;
+        max-width: 900px;
+        margin: auto $left-std-margin-big;
+    }
+
+    .img-container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            margin: 10px;
+            opacity: .85;
+        }
+    }
+
+    .technologies{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 500px;
+        margin: 20px auto;
+    
+        img{
+            height: 70px;
+            width: 70px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .about{
+        padding: 0px 10px;
+        h3{
+            margin-left: $left-std-margin-big;
+            margin-right: $right-std-margin-small;
+            font-size: 1.8em; 
+        }
+        p{
+            min-width: 650px;
+        }
+    }
+
+    .milestone-box-container{
+        margin-left: $left-std-margin-big;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start
+    }
+
+    .portfolio{
+        padding: 0px 10px;
+        &-container{
+            margin-left: $left-std-margin-big;
+            margin-right: $right-std-margin-big;
+            min-width: 300px;
+            min-height: 250px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $custom-light-grey;
+            box-shadow: 5px 5px 10px $custom-light-grey;
+            border-radius: 20px;
+            color: $custom-white;
+        }
+    }
+
+    .contact{
+        padding: 0px 10px;
+    }
+    
+    .social-container{
+        margin-left: $left-std-margin-big;
+        margin-top: 10px;
+        img{
+            height: 50px;
+            margin-right: $right-std-margin-small;
+            opacity: .7;
+            transition: opacity $transition-time-std;
+        }
+        img:hover{
+            opacity: 1;
+        }
     }
 }
