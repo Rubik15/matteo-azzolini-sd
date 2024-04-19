@@ -376,4 +376,56 @@ p{
             opacity: 1;
         }
     }
+
+
+
+    //RESUME PAGE
+
+.h-divider{
+    border: 1px solid $custom-light-green;
+    box-shadow: 3px 3px 5px $custom-light-green;
+    margin-left: $left-std-margin-big;
+    margin-right: $right-std-margin-big;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    min-width: 600px;
+}
+
+.v-divider{
+    border: 1px solid $custom-green;
+    margin: 0px 10px;
+}
+
+.resume-about{
+    p{
+        min-width: 600px;
+    }
+}
+
+.resume-experience-container{
+    display: flex;
+    margin-left: $left-std-margin-big;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .not-good{
+        color: red;
+    }
+    img{
+        height: 50px;
+        width: 60px;
+    }
+    ul{
+        h3{
+            color: $custom-light-green;
+            font-size: 1.5em;
+            margin: 0px;
+        }
+        list-style:outside;
+        max-width: 500px;
+    }
+    li{
+        color: $custom-white;
+        font-size: 1.4em;
+    }
+}
 }
