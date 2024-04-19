@@ -221,6 +221,39 @@ p{
 }
 
 
+//RESUME PAGE
+
+.h-divider{
+    border: 1px solid $custom-light-green;
+    box-shadow: 3px 3px 5px $custom-light-green;
+    margin: 15px;
+}
+
+.v-divider{
+    border: 1px solid $custom-green;
+    margin: 0px 10px;
+}
+
+.resume-experience-container{
+    display: flex;
+    margin-left: $left-std-margin-small;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img{
+        height: 50px;
+        width: 60px;
+    }
+    ul{
+        list-style:outside;
+        margin-left: $left-std-margin-small;
+        margin-right: $right-std-margin-small;
+    }
+    li{
+        color: $custom-white;
+    }
+}
+
+
 
 
 //+++++++++++++++++++++++++++++++++++++--------DESKTOP VIEW FROM HERE-----------------+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
