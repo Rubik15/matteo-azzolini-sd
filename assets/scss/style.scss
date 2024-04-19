@@ -38,7 +38,9 @@ header{
     .dropdown{
         span{
             z-index: 2;
-            position: relative;  /* This is important! */
+            position: absolute;  /* This is important! */
+            top: 12px;
+            right: 10px;
             cursor: pointer;
         }
     }
