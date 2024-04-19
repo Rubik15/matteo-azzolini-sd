@@ -112,12 +112,6 @@ p{
     margin: auto $left-std-margin-small;
 }
 
-h3{
-    margin-left: $left-std-margin-small;
-    margin-right: $right-std-margin-small;
-    font-size: 1.1em; 
-}
-
 .special-heading-text{
     text-align: center;
     margin-top: 40px;
@@ -165,6 +159,12 @@ h3{
 
 .about{
     padding: 0px 10px;
+    h3{
+        margin-left: $left-std-margin-small;
+        margin-right: $right-std-margin-small;
+        font-size: 1.1em; 
+    }
+    
 }
 
 //MILESTONES SECTION
@@ -237,6 +237,12 @@ h3{
         font-size: 1.7em;
         margin: 20px $left-std-margin-big;
         color: $custom-light-green;
+    }
+
+    h3{
+        margin-left: $left-std-margin-small;
+        margin-right: $right-std-margin-small;
+        font-size: 1.1em; 
     }
 
     p{
